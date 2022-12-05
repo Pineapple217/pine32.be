@@ -1,0 +1,39 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Pine32.be</title>
+        <link>https://pine32.be/posts/</link>
+        <description>Recent content in Posts on Pine32.be</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Thu, 06 Oct 2022 20:30:09 +0200</lastBuildDate>
+        <atom:link href="https://pine32.be/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Crest</title>
+            <link>https://pine32.be/posts/shit/</link>
+            <pubDate>Thu, 06 Oct 2022 20:30:09 +0200</pubDate>
+            
+            <guid>https://pine32.be/posts/shit/</guid>
+            <description></description>
+            <content type="html"><![CDATA[<p><img src="/img/crest.png" alt="stuffed Crest pizza"></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>My First Post</title>
+            <link>https://pine32.be/posts/my-first-post/</link>
+            <pubDate>Thu, 06 Oct 2022 20:19:12 +0200</pubDate>
+            
+            <guid>https://pine32.be/posts/my-first-post/</guid>
+            <description>Dit is een test dus euh ja dit is cool en zo
+import numpy as np A = np.array([5, 2, 5]) </description>
+            <content type="html"><![CDATA[<h1 id="dit-is-een-test-dus-euh-ja">Dit is een test dus euh ja</h1>
+<p>dit is cool en zo</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>A <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>])
+</span></span></code></pre></div>]]></content>
+        </item>
+        
+    </channel>
+</rss>
