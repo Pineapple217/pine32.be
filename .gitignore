@@ -1,1 +1,4 @@
-./site/public/
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json

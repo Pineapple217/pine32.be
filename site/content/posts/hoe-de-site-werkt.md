@@ -1,7 +1,7 @@
 ---
 title: "Hoe Deze Site Werkt"
 date: 2022-12-05T20:21:55+01:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
