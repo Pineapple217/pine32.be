@@ -37,5 +37,5 @@ rclone config
 Eens de config klaar is kan het volgende commando gebuikt worden voor het de uploaden. Het pad op het einde is specifiek aan de gebruikte hosting.
 
 ```sh
-rclone sync --interactive public/ pine32:domains/pine32.be/public_html
+rclone sync public/ pine32:domains/pine32.be/public_html
 ```
