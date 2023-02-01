@@ -1,7 +1,7 @@
 ---
 title: "My First Post"
 date: 2022-10-06T20:19:12+02:00
-draft: false
+draft: true
 toc: false
 images:
 tags:
@@ -9,6 +9,7 @@ tags:
 ---
 
 # Dit is een test dus euh ja
+
 dit is cool en zo
 woorden
 

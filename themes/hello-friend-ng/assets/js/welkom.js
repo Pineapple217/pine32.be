@@ -17,7 +17,6 @@ const msgList = [
   "What if we exchanged... our public key.",
   "Rust Supremacy.",
   "Trans rights!",
-  "test",
 ];
 
 const welkomMsg = () => {
