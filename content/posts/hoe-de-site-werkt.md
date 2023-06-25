@@ -8,33 +8,33 @@ tags:
   - WebDev
 ---
 
-Deze site is met [Hugo](https://gohugo.io/) wat een static site generator is. Alles is dus statis html, css en een klein beetje JavaScript. maar is wel snel zonder herhaling van layout zoals navbars en zo.
+Deze website is ontwikkeld met [Hugo](https://gohugo.io/), een static site generator. Dit betekent dat alles bestaat uit statische HTML, CSS en een klein beetje JavaScript. Het grote voordeel hiervan is dat de website snel is en geen herhaling van lay-outonderdelen zoals navigatiebalken bevat.
 
-# The "backend"
+# Het "backend"
 
-Dit is natuurlijk geen echt backend want alles is statis maar ik had er geen betere naam voor.
+Hoewel het geen echt backend is, omdat alles statisch is, kon ik geen betere naam bedenken.
 
-voor de server local te draaien voor dev gebruik je het volgende commando. De `-D` flag is voor drafts ook te generen, wat je meestal wilt bij dev.
+Om de server lokaal te draaien voor ontwikkeling, gebruik je het volgende commando. De `-D` vlag is bedoeld om concepten (drafts) ook te genereren, wat meestal handig is tijdens ontwikkeling.
 
 ```sh
 hugo server -D
 ```
 
-# Deploy
+# Implementatie
 
-Voor het vervolgens te genereren word het volgend commando gebruikt. De `--minify` flag spreekt voor zich.
+Om de website vervolgens te genereren, kun je het volgende commando gebruiken. De `--minify` vlag spreekt voor zich.
 
 ```sh
 hugo --minify
 ```
 
-Nu is de site gebouwt, nu nog online brengen. Hier voor gebruik ik [Rclone](https://rclone.org/). De makelijkste manier voor dit te gebruiken is met de config. Deze moet eerst ingestelt worden met het volgende commando.
+Nu de website is gebouwd, moet deze nog online worden gebracht. Hiervoor maak ik gebruik van [Rclone](https://rclone.org/). De gemakkelijkste manier om dit te doen, is door de configuratie eerst in te stellen met het volgende commando.
 
 ```sh
 rclone config
 ```
 
-Eens de config klaar is kan het volgende commando gebuikt worden voor het de uploaden. Het pad op het einde is specifiek aan de gebruikte hosting.
+Zodra de configuratie gereed is, kun je het volgende commando gebruiken om de website te uploaden. Het pad aan het einde is specifiek voor de hosting die je gebruikt.
 
 ```sh
 rclone sync public/ pine32:domains/pine32.be/public_html
