@@ -1,2 +1,4 @@
-/public/
-/resources/_gen/
+public
+processed_images
+*.kra
+*.kra~

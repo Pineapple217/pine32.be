@@ -1,58 +1,17 @@
-baseurl      = "https://pine32.be/"
-title        = "My Blog"
-languageCode = "en-us"
-theme        = "hello-friend-ng"
-paginate     = 10
+# The URL the site will be built for
+base_url = "https://pine32.be"
+title="pine32.be"
 
-[params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
 
-  # Subtitle for home
-  # homeSubtitle = "En niemand zal mij tegenhouden..."
-  homeSubtitle = "Bruh, geen JavaScript."
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
 
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
-  disableReadOtherPosts = true
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
 
-  # Enable sharing buttons, if you like
-  enableSharingButtons = false
-
-  # Metadata mostly used in document's head
-  description = "My new homepage or blog"
-  keywords = "homepage, blog"
-  images = [""]
-
-[taxonomies]
-    category = "blog"
-    tag      = "tags"
-    series   = "series"
-
-[languages]
-  [languages.en]
-    title = "Pine32.be"
-    subtitle = "idk man"
-    keywords = ""
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-    readOtherPosts = "Read other posts"
-
-    [languages.en.params.logo]
-      logoText = "Pine32.be"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
-
-  # And you can even create generic menu
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "/posts"
-  [[menu.main]]
-    identifier = "shitposts"
-    name       = "Shitposts"
-    url        = "/tags/shitpost"
+[extra]
+# Put all your custom variables here

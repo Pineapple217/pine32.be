@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero">
+    <div class="hero-info">
+        <h1>Jules R.</h1>
+        <h2>Data Engineer</h2>
+        <p>
+            Looking for work.
+            Based in Belgium.
+        </p>
+    </div>
+    {% set image = resize_image(path="/img/pro.jpg", width=300, op="fit_width") %}
+    <img src="{{ image.url }}" alt="profile picture" width="{{ image.width }}" height="{{ image.height }}" class="pp" />
+</div>
+<div class="projects">
+    <h1>Notable personal projects</h1>
+    <div>
+        <h2>Lzp - A lisp like language written in C</h2>
+        <h3><a href="https://github.com/Pineapple217/lzp" target="_blank">Source</a></h3>
+        <ul>
+            <li>Powerful yet considered building blocks</li>
+            <li>Metaprogramming built in</li>
+            <li>Extendable library</li>
+        </ul>
+        <code>
+        <pre>
+    lzp> def {fib}
+        (\ {n} {if (<= n 1) {n} {+ (fib (- n 1)) (fib (- n 2))}})
+    ()
+    lzp> fib 25
+    75025
+        </pre>
+        </code>
+    </div>
+    <div>
+        <h2>Mb - A minimal microblog</h2>
+        <h3><a href="https://github.com/Pineapple217/mb" target="_blank">Source</a> - <a href="https://mb.pine32.be/"
+                target="_blank">Live</a></h3>
+        <ul>
+            <li>small, fast and self contained.</li>
+            <li>Easy deploy with Docker or single binary</li>
+            <li>Full markdown support</li>
+            <li>Build in media manager for images, video and audio</li>
+        </ul>
+        {% set image = resize_image(path="/img/mb.jpg", width=500, op="fit_width") %}
+        <img src="{{ image.url }}" alt="screenshot of mb homepage" width="{{ image.width }}"
+            height="{{ image.height }}" />
+    </div>
+    <div>
+        <h2>Corap - A full stack CO2 scrapping app</h2>
+        <h3><a href="https://github.com/Pineapple217/Corap" target="_blank">Source</a> - <a
+                href="https://corap.beta.pine32.be/devices" target="_blank">Live</a></h3>
+        <ul>
+            <li>Robust scraper in python</li>
+            <li>Over 3 million items scraped</li>
+            <li>99.9% > uptime over 1 year</li>
+            <li>Fast lightweight frontend in Golang</li>
+            <li>Minimal frontend javascript</li>
+        </ul>
+        {% set image = resize_image(path="/img/corap.jpg", width=500, op="fit_width") %}
+        <img src="{{ image.url }}" alt="screenshot of corap homepage" width="{{ image.width }}"
+            height="{{ image.height }}" />
+    </div>
+</div>
+{% endblock content %}
