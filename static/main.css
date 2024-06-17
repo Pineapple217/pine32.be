@@ -62,7 +62,7 @@ nav {
     overflow: visible;
     display: flex;
     font-size: 24px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 nav ul {
@@ -80,6 +80,7 @@ nav li{
     padding: 1em 0;
 }
 
+
 nav li a {
     text-decoration: none;
     color: var(--accent-color);
@@ -91,6 +92,30 @@ a:visited {
 
 a:active, a:hover {
     color: var(--accent-color-hover);
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    padding-left: 2em;
+}
+
+ul>li::before {
+    content: '- ';
+    font-weight: bold;
+}
+
+nav ul>li::before {
+    content: '';
+}
+
+ul>li {
+    padding-bottom: 0.3em;
+}
+
+li::before {
+    position: absolute;
+    left: 0;
 }
 
 .hero .hero-info {
@@ -124,12 +149,12 @@ a:active, a:hover {
 }
 
 .pp {
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     color: var(--footer-color);
     margin-top: 4em;
     margin-bottom: 2em;
@@ -169,12 +194,24 @@ footer a, footer a:visited, footer a:hover {
     flex-wrap: wrap;
 }
 .flex-columns>* {
-    flex: 1 1;
+    flex-basis: 10%;
+    flex-grow: 1;
+    min-width: fit-content;
+}
+.flex-columns>div>*:first-child{
+    margin-top: 0;
+}
+.flex-text {
+    min-width: 18rem;
+}
+
+.flex-text p{
+    text-align: justify;
+    /* margin: 0; */
 }
 
 .flex-columns>div {
     margin: 1rem 0;
-    min-width: 10rem;
     padding: 0 1rem;
 }
 
@@ -188,4 +225,20 @@ footer a, footer a:visited, footer a:hover {
 
 .project-summary {
     padding: 1em 0;
+}
+
+.icon {
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.125em;
+    color: #ffffff;
+}
+
+.socials a {
+    text-decoration: none;
+    padding-right: 0.5em;
+}
+
+.big-project header p{
+    margin-top: -1.2em;
 }

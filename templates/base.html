@@ -5,14 +5,17 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>{{ config.title }}</title>
         <link rel="stylesheet" href="{{ get_url(path='/main.css', cachebust=true) }}" />
+        <link rel="icon" href="/noise.svg" type="image/svg+xml">
     </head>
     <nav>
         <ul>
             <li><a href="/">Home</a></li>
         </ul>
         <ul>
-            <li><a href="/projects">Projects</a></li>
+            {# <li><a href="/projects">Projects</a></li> #}
+            <li><a href="/portfolio">Portfolio</a></li>
             {# <li><a href="/blog">Blog</a></li> #}
             <li><a href="/about">About</a></li>
         </ul>
@@ -24,13 +27,14 @@
         </svg>
         {% block content %} {% endblock %}
     </body>
+
     <footer>
+        <p>&copy; {{ now() | date(format="%Y") }} pine32. All Rights Reserved.</p>
         <p>
-            &copy; {{ now() | date(format="%Y") }} pine32.be |
-            All opinions are mine and mine alone. |
-            Powered by <a href="https://www.getzola.org/"> Zola</a>
+            Powered by <a target="_blank" href="https://www.getzola.org/"> Zola</a>.
         </p>
     </footer>
+
     {% if config.mode == "build" %}
     <script async src="https://umami.pine32.be/script.js"
         data-website-id="6ed9dd68-098f-4fea-8440-4b2e4e18c3ee"></script>
