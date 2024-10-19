@@ -12,7 +12,7 @@ draft = false
     <h3>Links</h3>
     <ul>
       <li><a target="_blank" href="mailto:contact@pine32.be">Email</a></li>
-      <li><a target="_blank" href="https://drive.google.com/drive/folders/19VhleRmM2VZA6yEwbBgfcH3VGJKM_GlT?usp=sharing">Resume</a></li>
+      <!-- <li><a target="_blank" href="">Resume</a></li> -->
       <li>
         <a target="_blank" href="https://linkedin.com/in/jules--r">LinkedIn</a>
       </li>
