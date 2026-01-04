@@ -1,5 +1,6 @@
 +++
-paginate_by = 3
-sort_by = "date"
+title = "Blog"
+path = "blog"
 template = "blog.html"
+draft = false
 +++
